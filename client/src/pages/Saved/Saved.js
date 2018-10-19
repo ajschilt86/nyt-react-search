@@ -49,77 +49,77 @@ class Saved extends Component {
     render() {
         return (
             <div>
-        <Nav />
-        <div className="container">
-          {this.state.savedArticles ? (
-            <div>
-              <div className="panel panel-primary">
-                <div className="panel-heading">
-                  <h3 className="panel-title"><strong><i className="fa fa-table"></i> Results </strong></h3>
+                <Nav />
+                <div className="container">
+                    {this.state.savedArticles ? (
+                        <div>
+                            <div className="panel panel-primary">
+                                <div className="panel-heading">
+                                    <h3 className="panel-title"><strong><i className="fa fa-table"></i> Results </strong></h3>
+                                </div>
+                                <div className="panel-body" id="well-section">
+                                    <ol className="collection with-header">
+                                        {this.state.articles}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                        :
+                        (<div className="preloader-wrapper big active right">
+                            <div className="spinner-layer spinner-blue">
+                                <div className="circle-clipper left">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="gap-patch">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="circle-clipper right">
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+
+                            <div className="spinner-layer spinner-red">
+                                <div className="circle-clipper left">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="gap-patch">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="circle-clipper right">
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+
+                            <div className="spinner-layer spinner-yellow">
+                                <div className="circle-clipper left">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="gap-patch">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="circle-clipper right">
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+
+                            <div className="spinner-layer spinner-green">
+                                <div className="circle-clipper left">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="gap-patch">
+                                    <div className="circle"></div>
+                                </div>
+                                <div className="circle-clipper right">
+                                    <div className="circle"></div>
+                                </div>
+                            </div>
+                        </div>)
+                    }
                 </div>
-                <div className="panel-body" id="well-section">
-                  <ol className="collection with-header">
-                    {this.state.articles}
-                  </ol>
-                </div>
-              </div>
             </div>
-          )
-            :
-            (<div className="preloader-wrapper big active right" style={{
-              background: "none"
-            }}>
-              <div className="spinner-layer spinner-blue">
-                <div className="circle-clipper left">
-                  <div className="circle"></div>
-                </div>
-                <div className="gap-patch">
-                  <div className="circle"></div>
-                </div>
-                <div className="circle-clipper right">
-                  <div className="circle"></div>
-                </div>
-              </div>
-
-              <div className="spinner-layer spinner-red">
-                <div className="circle-clipper left">
-                  <div className="circle"></div>
-                </div>
-                <div className="gap-patch">
-                  <div className="circle"></div>
-                </div>
-                <div className="circle-clipper right">
-                  <div className="circle"></div>
-                </div>
-              </div>
-
-              <div className="spinner-layer spinner-yellow">
-                <div className="circle-clipper left">
-                  <div className="circle"></div>
-                </div>
-                <div className="gap-patch">
-                  <div className="circle"></div>
-                </div>
-                <div className="circle-clipper right">
-                  <div className="circle"></div>
-                </div>
-              </div>
-
-              <div className="spinner-layer spinner-green">
-                <div className="circle-clipper left">
-                  <div className="circle"></div>
-                </div>
-                <div className="gap-patch">
-                  <div className="circle"></div>
-                </div>
-                <div className="circle-clipper right">
-                  <div className="circle"></div>
-                </div>
-              </div>
-            </div>)
-          }
-        </div>
-      </div>
-        )
+        );
     }
 }
+
+export default Saved;
