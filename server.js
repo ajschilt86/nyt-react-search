@@ -4,7 +4,7 @@ const mongoose = require('mongoose'); // MongoDB ORM
 const routes = require("./routes");
 let db = require("./models"); // Require all models
 
-let PORT = process.env.PORT || 8080;
+let PORT = process.env.PORT || 3000;
 let mongooseConnection = mongoose.connection;
 
 
